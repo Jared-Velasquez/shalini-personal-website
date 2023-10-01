@@ -1,1 +1,8 @@
+html {
+  margin: 0 auto;
+  max-width: 1440px;
+}
 
+.card-center {
+  left: 30%;
+}
