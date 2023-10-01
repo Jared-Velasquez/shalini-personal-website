@@ -1,8 +1,18 @@
 html {
-  margin: 0 auto;
-  max-width: 1440px;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
-.card-center {
-  left: 30%;
+.homepage-container {
+    overflow-x: auto;
+    position: relative;
+}
+
+.card-location {
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    width: 350px;
 }
