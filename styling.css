@@ -3,6 +3,16 @@ html {
     max-width: 1440px;
 }
 
+body {
+    background-image: url("./homepage-background-min.png");
+    background-position: left top;
+    position: absolute;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .homepage-container {
     overflow-x: auto;
     position: relative;
@@ -11,8 +21,26 @@ html {
 .card-location {
     float: left;
     position: absolute;
-    left: 0px;
-    top: 0px;
     z-index: 1000;
     width: 350px;
+    opacity: 0.8;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+}
+
+.specimen-name {
+    padding: 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+    text-shadow: 2px 2px 4px palegoldenrod;
+}
+
+.accordion-custom-scroll {
+    max-height: 250px;
+    overflow-y: auto;
 }
