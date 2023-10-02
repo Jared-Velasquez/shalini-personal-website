@@ -1,6 +1,7 @@
 html {
     margin: 0 auto;
     max-width: 1440px;
+    animation: animatedBackground 7s linear infinite alternate;
 }
 
 body {
@@ -8,10 +9,19 @@ body {
     background-position: left top;
     position: absolute;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100vw;
+    background-repeat: repeat-x;
+    background-size: 100vw 100vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+@keyframes animatedBackground {
+    from {
+      backdrop-filter: blur(10px);
+    }
+    to {
+      backdrop-filter: none;
+    }
+  }
 
 .homepage-container {
     overflow-x: auto;
@@ -25,10 +35,17 @@ body {
     width: 350px;
     opacity: 0.8;
     margin: 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0.9;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     border-radius: 15px;
+    background-color: palegoldenrod;
+}
+
+.profile-pic {
+    padding-left: 15px;
+    width: 170px;
+    position: absolute;
 }
 
 .specimen-name {
@@ -37,10 +54,21 @@ body {
     position: sticky;
     top: 0;
     z-index: 1200;
-    text-shadow: 2px 2px 4px palegoldenrod;
+    text-shadow: 4px 4px 8px palegoldenrod;
 }
 
 .accordion-custom-scroll {
     max-height: 250px;
     overflow-y: auto;
+    background-color: palegoldenrod;
+}
+
+#accordionExampleOne {
+    z-index: 1300;
+}
+
+.resume-button {
+    background-color: palegoldenrod;
+    border-radius: 15px;
+    z-index: 1000;
 }
